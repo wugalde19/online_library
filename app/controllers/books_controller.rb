@@ -2,7 +2,7 @@ class BooksController < ApplicationController
   def index
     @books = [
       {id: 1, name: 'Libro 1', author: 'Autor 1'},
-      {id: 2, name: 'Libro 2', author: 'Autor 2'},
+      {id: nil, name: 'Libro 2', author: 'Autor 2'},
       {id: 3, name: 'Libro 3', author: 'Autor 3'},
     ]
   end
@@ -10,7 +10,7 @@ class BooksController < ApplicationController
   def show
     @books = [
       {id: 1, name: 'Libro 1', author: 'Autor 1'},
-      {id: 2, name: 'Libro 2', author: 'Autor 2'},
+      {id: nil, name: 'Libro 2', author: 'Autor 2'},
       {id: 3, name: 'Libro 3', author: 'Autor 3'},
     ]
 

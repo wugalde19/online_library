@@ -1,8 +1,7 @@
 <h1>Books</h1>
 
 <% @books.each do |book|%>
-  <p>
-    Author: <%= book[:author] %> | Book Name: <%= book[:name] %>
-  </p>
+  <% unless book[:id].nil? %>
+    <p><%= render partial: 'book', locals: { :book => book } %></p>
+  <% end %>
 <% end %>
-
