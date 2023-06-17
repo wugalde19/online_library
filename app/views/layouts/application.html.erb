@@ -11,6 +11,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <%= link_to 'Logo', root_path %> | <%= link_to 'Books', books_path %> | <%= link_to 'About', about_path %>
+    </header>
+    <main><%= yield %></main>
+    <footer>
+      Copyright &copy; <%= Time.zone.now.year %>
+    </footer>
   </body>
 </html>
